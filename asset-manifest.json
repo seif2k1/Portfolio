@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.18c84849.css",
+    "main.js": "/Portfolio/static/js/main.7db11bf1.js",
+    "static/media/barbarshop.png": "/Portfolio/static/media/barbarshop.f667ca0b75d014340584.png",
+    "static/media/Screenshot 2023-05-11 032916.png": "/Portfolio/static/media/Screenshot 2023-05-11 032916.6d4c5d1fef1b69c6f11c.png",
+    "static/media/ecomerce.png": "/Portfolio/static/media/ecomerce.ca6ded884365b2dea985.png",
+    "static/media/dachbord.png": "/Portfolio/static/media/dachbord.f52fedbb41f8e88a322f.png",
+    "static/media/main_logo.png": "/Portfolio/static/media/main_logo.0317f89025b7987b7385.png",
+    "static/media/BACKGROUND.png": "/Portfolio/static/media/BACKGROUND.451498af60f47d604cc8.png",
+    "static/media/Group.png": "/Portfolio/static/media/Group.fcabc8a4a7dbba0e5e61.png",
+    "static/media/Seif eddine akkouche (1).pdf": "/Portfolio/static/media/Seif eddine akkouche (1).3dca6791bb0264b7b482.pdf",
+    "index.html": "/Portfolio/index.html",
+    "static/media/github.svg": "/Portfolio/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
+    "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
+    "main.18c84849.css.map": "/Portfolio/static/css/main.18c84849.css.map",
+    "main.7db11bf1.js.map": "/Portfolio/static/js/main.7db11bf1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18c84849.css",
+    "static/js/main.7db11bf1.js"
+  ]
+}
