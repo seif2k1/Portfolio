@@ -1,0 +1,101 @@
+.group-logo{
+    background: url(../images/BACKGROUND.png) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 400px;
+    border-radius: 40px;
+}
+.group-logo img{
+    height: 200px;
+    width: 200px;
+}
+.skills{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap:20px;
+}
+.skills .skills-descreption h1{
+    text-align: center;
+}
+.skills-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0 20px;
+}
+.skills-details h1{
+    font-size: 16px;
+}
+.progress{
+    width: 30vw;
+}
+.skills-framworks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills-framworks h1{
+    font-size: 20px;
+}
+.skills-bonnus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills-bonnus h1{
+    font-size: 20px;
+}
+.Bonus,.Framworks,.My-Skills{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    margin:12px 0;
+    padding-bottom: 12px ;
+    color: #FF4C60;
+}
+.Bonus:hover div,.Framworks:hover div,.My-Skills:hover div{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 3px;
+    background: #FF4C60;
+    animation: seif1 1s ;
+}
+@keyframes seif1{
+    from{
+        width: 0px;
+    }   
+    to{
+        width: 200px;
+    }
+}
+@media screen and (0<=width<=320px){
+    .skills{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+        gap:20px;
+    }
+    .progress{
+        width: 50vw;
+    }
+    .group-logo img{
+        height: 150px;
+        width: 150px;
+    }.group-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        border-radius: 40px;
+    }
+}

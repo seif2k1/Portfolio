@@ -1,0 +1,67 @@
+.footer{
+    width:100%;
+    height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.myinfo{
+    background:#F9F3F5;
+    height:80%;
+    text-align:center;
+    border-radius:35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+.social-info{
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.social-info div h1{
+    text-align:center;
+    font-size:16px;
+}
+.social-info div img{
+    width:70px;
+    height:70px;
+}
+.social-info div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:12px 0;
+}
+.contact input{
+    border:1px solid #F9F3F5;
+    box-shadow:0 0 5px #F9F3F5;
+    border-radius:19px;
+}
+.contact{
+    margin-left:50px;
+    padding:20px;
+    border:1px solid #F9F3F5;
+    box-shadow:0 0 5px #FF4C60;
+    border-radius:35px;
+}
+@media screen and  (0 <= width <= 320px){
+    .footer{
+        margin:20px 0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.contact{
+    margin:20px 0;
+    padding:20px;
+    border:1px solid #F9F3F5;
+    box-shadow:0 0 5px #FF4C60;
+    border-radius:35px;
+}
+}

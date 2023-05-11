@@ -1,0 +1,88 @@
+.Sides{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:relative;
+}
+.Sides .images img{
+    z-index:-1;
+}
+.Sides .images img:nth-child(1){
+    position: absolute;
+    left:600px;
+    top:116px;
+    scale: 0.8;
+}
+.Sides .images img:nth-child(2){
+    position: absolute;
+    left:500px;
+    top:200px;
+    scale: 1;
+}
+.Sides .images img:nth-child(3){
+    position: absolute;
+    left:600px;
+    top:450px;
+    scale: 1.3;
+}
+.Sides .images img:nth-child(4){
+    position: absolute;
+    left:350px;
+    top:100px;
+    scale: 0.8;
+}
+.Sides .images img:nth-child(5){
+    position: absolute;
+    left:500px;
+    top:300px;
+    scale: 1.3;
+}
+.Sides .text div:nth-child(1) h1{
+    font-size: 48px;
+}
+.Sides .text div:nth-child(2) h1{
+    font-size: 48px;
+    color: #FF4C60;
+}
+.Sides .text div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap:0 40px;
+}
+.Sides .text div:nth-child(3) h1{
+    font-size: 20px;
+}
+.Sides .logo img{
+    height: 625px;
+    width: 589px;
+}
+@media screen and (0<=width<=320px){
+    .Sides{
+        height:100vh;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-evenly;
+        position:relative;
+    }
+    .Sides .logo img{
+        height: 300px;
+        width: 280px;
+    }
+}
+@media screen and (320px<=width<=768px){
+    .Sides{
+        height:100vh;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-evenly;
+        position:relative;
+    }
+    .Sides .logo img{
+        height: 500px;
+        width: 380px;
+    }
+}
