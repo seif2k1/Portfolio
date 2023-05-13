@@ -11,18 +11,17 @@ const Hello = () => {
             <div className="images">
                 {ListImages.map((list)=>{
                     return(
-                        <motion.img 
+                        <motion.img /* 
             animate={{y:'50px'}}
-            transition={{duration:2,repeatType:"reverse",repeat:Infinity}}
+            transition={{duration:2,repeatType:"reverse",repeat:Infinity}} */
             src={list.img} alt="" />
                     )
                 })}
             </div>
-            <motion.div 
+            <motion.div /* 
             initial={{x:"-200px",opacity:0}}
             whileInView={{x:0,opacity:1}}
-            transition={{duration:2,type:"spring",stiffness:120}}
-            d
+            transition={{duration:2,type:"spring",stiffness:120}} */
             className="text">
                 <div>
                     <h1>
@@ -31,7 +30,7 @@ const Hello = () => {
                 </div>
                 <div>
                     <h1>
-                    <Typewriter
+                    {/* <Typewriter
                         words={['Front End Developper']}
                         loop={0}
                         cursor
@@ -39,7 +38,7 @@ const Hello = () => {
                         typeSpeed={200}
                         deleteSpeed={100}
                         delaySpeed={2000}
-                        /> 
+                        />  */}
                     </h1>
                 </div>
                 <div>
@@ -55,8 +54,8 @@ const Hello = () => {
                 </div>
             </motion.div>
             <motion.div
-            animate={{y:'50px'}}
-            transition={{duration:2,repeatType:"reverse",repeat:Infinity}}
+           /*  animate={{y:'50px'}}
+            transition={{duration:2,repeatType:"reverse",repeat:Infinity}} */
             className="logo">
                 <img src={img} alt="img" />
             </motion.div>

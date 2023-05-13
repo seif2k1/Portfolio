@@ -75,7 +75,7 @@
         width: 200px;
     }
 }
-@media screen and (0<=width<=320px){
+@media screen and (0<=width<=768px){
     .skills{
         display:flex;
         flex-direction:column;

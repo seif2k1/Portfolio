@@ -17,7 +17,7 @@
 .mySwiper img{
   background:fixed center/cover;
 }
-@media screen and  (0 <= width <= 320px){
+@media screen and  (0 <= width <= 425px){
   .swiper {
     width: 240px;
     height: 400px;

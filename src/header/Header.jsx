@@ -9,10 +9,10 @@ const Header = () => {
     /* const width = document.innerWidth <= '768px' ? true : false; */
     return(
         <motion.div
-        id="firstSection"
+        id="firstSection"/* 
         initial={{scale:1.2,opacity:0}}
         whileInView={{scale:1,opacity:1}}
-        transition={{duration:3,type:"spring",stiffness:400}}
+        transition={{duration:3,type:"spring",stiffness:400}} */
         className="Menu">
             <div className="Main_Title_Menu">
                 <h1>
@@ -29,19 +29,18 @@ const Header = () => {
             <div className={`Menu_Content ${open ? "open":"close"}`}>
                     {List.map((list,index)=>{
                         return(
-                        <ul key={index} className="List" onClick={()=> setActive(index)}>
+                            <Link
+                            to={list.file}
+                            ><ul key={index} className="List" onClick={()=> setActive(index)}>
+                            
                             <li 
-                            className={`${active===index ? 'active':''}`} >
-                                <Link
-                                to={list.file}
-                                spy={true}
-                                smooth={true}
-                                >
+                            className={`${active===index ? 'active':''} `} >
+                                
                                 {list.name}
-                                </Link>
-                            <div className={`${active===index ? 'active':''}`}></div>
+                            <div ></div>
                             </li>
                         </ul>
+                                </Link>
                         )
                     })}
             </div>

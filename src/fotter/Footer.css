@@ -1,5 +1,4 @@
 .footer{
-    width:100%;
     height:70vh;
     display:flex;
     align-items:center;
@@ -7,9 +6,10 @@
 }
 .myinfo{
     background:#F9F3F5;
-    height:80%;
+    height:100%;
     text-align:center;
     border-radius:35px;
+    margin:0 14px ;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
@@ -41,15 +41,14 @@
     border-radius:19px;
 }
 .contact{
-    margin-left:50px;
     padding:20px;
     border:1px solid #F9F3F5;
     box-shadow:0 0 5px #FF4C60;
     border-radius:35px;
 }
-@media screen and  (0 <= width <= 320px){
+@media screen and  (0<=width<= 768px){
     .footer{
-        margin:20px 0;
+    margin:20px 0;
     width:100%;
     height:100vh;
     display:flex;

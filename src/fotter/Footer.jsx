@@ -18,12 +18,12 @@ const Footer = ()=>{
         });
     };
     return(
-        <div className="footer" id="footer">
-            <motion.div 
+        <div className="footer my-md-5" id="footer">
+            <motion.div /* 
         initial={{x:'-200px',opacity:0}}
         whileInView={{x:'0px',opacity:1}}
-        transition={{duration:3,type:"spring",stiffness:400}}
-            className="myinfo">
+        transition={{duration:3,type:"spring",stiffness:400}} */
+            className="myinfo ">
                 <div className="info-text">
                     <h1>Get in touch with us!</h1>
                     <p>Whether you want to learn about UX/UI or need developer services let us help with your challenge.
@@ -40,11 +40,11 @@ const Footer = ()=>{
                     </div>
                 </div>
             </motion.div>
-            <motion.div 
+            <motion.div /* 
         initial={{x:'400px',opacity:0}}
         whileInView={{x:'0px',opacity:1}}
-        transition={{duration:3,type:"spring",stiffness:400}}
-            className="contact">
+        transition={{duration:3,type:"spring",stiffness:400}} */
+            className="contact ">
             <form className="row g-3 needs-validation" novalidate ref={form} onSubmit={sendEmail}>
   <div className="col-md-5">
     <input type="text" name="user_name" className="form-control" id="validationCustom01" placeholder="First name" required/>

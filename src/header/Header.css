@@ -33,7 +33,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FF4C60;
 }
 .Menu_Content ul .active div{
     width: 100%;
@@ -54,14 +53,24 @@ a{
 .Humberger{
     display:none;
 }
-@media only screen and (0<=width<=320px){
+@media only screen and (max-width:768px){
+    .Menu{
+        padding:12px ;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        transition: 0.5s all ease-in-out;
+        margin-bottom:20px;
+    }
     .Humberger div,.Humberger-close div{
         width: 30px;
         height: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: #FF4C60;
         transition: .5s all ease-in-out;  
         cursor: pointer;      
     }
@@ -73,10 +82,14 @@ a{
         align-items: center;
         justify-content: space-around;
         height: 30px;
+        position: fixed;
+        top:20px;
+        right:0;
+        z-index: 10;
     }
     .Humberger-close div{
         z-index:10;
-        background: #FF4C60;
+        background: black;
     }
     .Humberger-close div:nth-child(1){
         transform: rotate(45deg) translate(0,-1px);
@@ -88,28 +101,17 @@ a{
         transform:  translateX(15px);
         opacity: 0;
     }
-    .Menu{
-        padding:12px ;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: space-between;
-        background:  #FF4C60;
-        color: white;
-        transition: 0.5s all ease-in-out;
-    }
     .open {
         position: fixed;
         z-index: 9;
-        top: 0;
-        left: 100px;
-        height: 600px;
+        top:0;
+        bottom:0;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 200px;
-        background-color: black;
+        background-color: #FF4C60;
         transition: 0.5s all ease-in-out;
     }
     .close{
@@ -117,17 +119,39 @@ a{
         transition: 0.5s all ease-in-out;
     }
     .Humberger{
+        position: fixed;
+        right:0;
         z-index: 999;
     }
-}
-@media screen and (320px<=width<=768px){
+    .Menu_Content ul .active div{
+        width: 100%;
+        height: 3px;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        animation: seif 1s ;
+    }
+    @keyframes seif{
+        from{
+            width: 0px;
+        }   
+        to{
+            width: 100%;
+        }
+    }
+}/* 
+@media screen and (425px<=width<=768px){
+    .Menu{
+        position: relative;
+        margin-bottom:20px;
+    }
     .Humberger div,.Humberger-close div{
         width: 40px;
         height: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: #FF4C60;
         transition: .5s all ease-in-out;  
         cursor: pointer;      
     }
@@ -142,7 +166,7 @@ a{
     }
     .Humberger-close div{
         z-index:10;
-        background: #FF4C60;
+        background: white;
     }
     .Humberger-close div:nth-child(1){
         transform: rotate(45deg) translate(0,-1px);
@@ -160,22 +184,19 @@ a{
         position: relative;
         align-items: center;
         justify-content: space-between;
-        background:  #FF4C60;
         color: white;
         transition: 0.5s all ease-in-out;
-    }
-    .open {
+    }.open {
         position: fixed;
         z-index: 9;
-        top: 0;
-        left: 567px;
-        height: 600px;
+        top: 0px;
+        right:0;
+        height:250px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 200px;
-        background-color: black;
+        background-color: #FF4C60;
         transition: 0.5s all ease-in-out;
     }
     .close{
@@ -183,6 +204,8 @@ a{
         transition: 0.5s all ease-in-out;
     }
     .Humberger{
+        position: fixed;
+        right:0;
         z-index: 999;
     }
-}
+} */

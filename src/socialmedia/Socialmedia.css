@@ -44,7 +44,7 @@
     justify-content:center;
     gap:12px;
 }
-@media screen and (0<=width<=320px){
+@media screen and (0<=width<=425px){
     .Social{
         display:flex;
         flex-direction:column;
@@ -62,7 +62,7 @@
         gap: 12px 0;
     }
 }
-@media screen and (320px<=width<=768px){
+@media screen and (425px<=width<=768px){
     .Social{
         margin:12px 0;
         display:flex;
