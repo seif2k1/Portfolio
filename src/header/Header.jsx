@@ -6,13 +6,12 @@ import {Link} from 'react-scroll'
 const Header = () => {
     const [active,setActive] = useState(0);
     const [open,setOpen] = useState(false);
-    /* const width = document.innerWidth <= '768px' ? true : false; */
     return(
         <motion.div
-        id="firstSection"/* 
+        id="firstSection"
         initial={{scale:1.2,opacity:0}}
         whileInView={{scale:1,opacity:1}}
-        transition={{duration:3,type:"spring",stiffness:400}} */
+        transition={{duration:3,type:"spring",stiffness:400}} 
         className="Menu">
             <div className="Main_Title_Menu">
                 <h1>

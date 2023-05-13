@@ -20,10 +20,10 @@ import {motion} from "framer-motion"
 const Mywork = ()=>{
     return(
         <motion.div 
-        id="myworks"/* 
+        id="myworks"
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:3,type:"spring",stiffness:400}} */
+        transition={{duration:3,type:"spring",stiffness:400}}
         className="portfolio">
             <Swiper
             loop={true}
