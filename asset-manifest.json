@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7d218531.css",
-    "main.js": "/Portfolio/static/js/main.29949e1c.js",
+    "main.css": "/Portfolio/static/css/main.164920eb.css",
+    "main.js": "/Portfolio/static/js/main.02dcbc63.js",
     "static/media/barbarshop.png": "/Portfolio/static/media/barbarshop.f667ca0b75d014340584.png",
     "static/media/Screenshot 2023-05-11 032916.png": "/Portfolio/static/media/Screenshot 2023-05-11 032916.6d4c5d1fef1b69c6f11c.png",
     "static/media/ecomerce.png": "/Portfolio/static/media/ecomerce.ca6ded884365b2dea985.png",
@@ -13,11 +13,11 @@
     "index.html": "/Portfolio/index.html",
     "static/media/github.svg": "/Portfolio/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
     "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
-    "main.7d218531.css.map": "/Portfolio/static/css/main.7d218531.css.map",
-    "main.29949e1c.js.map": "/Portfolio/static/js/main.29949e1c.js.map"
+    "main.164920eb.css.map": "/Portfolio/static/css/main.164920eb.css.map",
+    "main.02dcbc63.js.map": "/Portfolio/static/js/main.02dcbc63.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d218531.css",
-    "static/js/main.29949e1c.js"
+    "static/css/main.164920eb.css",
+    "static/js/main.02dcbc63.js"
   ]
 }
