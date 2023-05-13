@@ -7,17 +7,14 @@ import {motion} from "framer-motion";
 const Skills = () => {
   return (
     <div className='skills' id="skills">
-        <div className="row">
         <motion.div
-            animate={{y:'50px'}}
-            transition={{duration:2,repeatType:"reverse",repeat:Infinity}}
-        className='group-logo mx-auto col-12 col-md-12 col-lg-6 '>
+        className='group-logo'>
             <img src={img} alt="img" />
         </motion.div>
         <motion.div 
-        className='skills-descreption col-12 col-md-12 col-lg-6'>
+        className='skills-descreption'>
             <motion.h1 
-            initial={{x:'200px',opacity:0}}
+            initial={{x:'-50px',opacity:0}}
             whileInView={{x:'0px',opacity:1}}
             transition={{duration:3,type:"spring",stiffness:50}}
             className="My-Skills">
@@ -33,7 +30,7 @@ const Skills = () => {
                             transition={{duration:3,type:"spring",stiffness:50}}
                         > {skill.name} </motion.h1> 
                         <motion.div 
-                            initial={{x:'400px',opacity:0}}
+                            initial={{x:'-50px',opacity:0}}
                             whileInView={{x:'0px',opacity:1}}
                             transition={{duration:3,type:"spring",stiffness:50}}
                         className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -43,7 +40,7 @@ const Skills = () => {
                 )
             })}
             <motion.h1 
-            initial={{x:'200px',opacity:0}}
+            initial={{x:'-50px',opacity:0}}
             whileInView={{x:'0px',opacity:1}}
             transition={{duration:3,type:"spring",stiffness:50}}
             className="Framworks">
@@ -64,7 +61,7 @@ const Skills = () => {
                     })}
                 </div>
             <motion.h1 
-            initial={{x:'200px',opacity:0}}
+            initial={{x:'-50px',opacity:0}}
             whileInView={{x:'0px',opacity:1}}
             transition={{duration:3,type:"spring",stiffness:50}}
             className="Bonus">
@@ -85,7 +82,6 @@ const Skills = () => {
                     })}
                 </div>
         </motion.div>
-        </div>
 </div>
   )
 }

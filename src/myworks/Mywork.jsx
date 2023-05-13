@@ -9,12 +9,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-cards";
-import { Autoplay} from "swiper";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectCards } from "swiper";
+import { EffectCoverflow } from "swiper"
 import {motion} from "framer-motion"
 
 const Mywork = ()=>{
@@ -25,39 +25,47 @@ const Mywork = ()=>{
         whileInView={{opacity:1}}
         transition={{duration:3,type:"spring",stiffness:400}}
         className="portfolio">
-            <Swiper
-            loop={true}
-            centeredSlides={true}
-            autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            }}
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards,Autoplay]}
-            className="mySwiper"
-            >
-                <SwiperSlide>
-                    <a href="https://seif2k1.github.io/barbershop/">
-                    <img src={pic1} alt="seof"/>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://seif2k1.github.io/newlink/">
-                    <img src={pic2} alt="seof"/>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://seif2k1.github.io/Cards/">
-                    <img src={pic3} alt="seof"/>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <a href="https://seif2k1.github.io/Cart/">
-                    <img src={pic4} alt="seof"/>
-                    </a>
-                </SwiperSlide>
-            </Swiper>
+          
+      <Swiper
+      
+      breakpoints={{
+        640: {
+          slidesPerView:1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },}}
+        autoplay={true}
+        loop={true}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[EffectCoverflow]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={pic1} alt="images" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={pic2} alt="images" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={pic3} alt="images" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={pic4} alt="images" />
+        </SwiperSlide>
+      </Swiper>
         </motion.div>
     )
 }

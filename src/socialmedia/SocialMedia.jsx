@@ -10,7 +10,7 @@ const Social = ()=>{
             <div className="Social">
                 <div className="">
                     <motion.h1
-            initial={{x:'-200px',opacity:0}}
+            initial={{x:'-50px',opacity:0}}
             whileInView={{x:'0px',opacity:1}}
             transition={{duration:3,type:"spring",stiffness:50}}
                     >Social Media</motion.h1>
@@ -19,7 +19,7 @@ const Social = ()=>{
                     {social.map((socl,index)=>{
                         return(
                             <motion.div 
-                            initial={{x:'200px',opacity:0}}
+                            initial={{x:'-50px',opacity:0}}
                             whileInView={{x:'0px',opacity:1}}
                             transition={{duration:3,type:"spring",stiffness:50}}
                             className="Socials" key={index}>

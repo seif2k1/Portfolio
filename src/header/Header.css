@@ -64,6 +64,11 @@ a{
         transition: 0.5s all ease-in-out;
         margin-bottom:20px;
     }
+    .Humberger-close {
+        position: fixed;
+        right:0;
+        top:0; 
+    }
     .Humberger div,.Humberger-close div{
         width: 30px;
         height: 3px;
@@ -74,7 +79,7 @@ a{
         transition: .5s all ease-in-out;  
         cursor: pointer;      
     }
-    .Humberger,.Humberger-close{   
+    .Humberger,.Humberger-close{  
         cursor: pointer;      
         margin: 12px;
         display: flex;
@@ -89,7 +94,7 @@ a{
     }
     .Humberger-close div{
         z-index:10;
-        background: black;
+        background: white;
     }
     .Humberger-close div:nth-child(1){
         transform: rotate(45deg) translate(0,-1px);
@@ -106,6 +111,8 @@ a{
         z-index: 9;
         top:0;
         bottom:0;
+        left:0;
+        right: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -121,6 +128,7 @@ a{
     .Humberger{
         position: fixed;
         right:0;
+        top:0; 
         z-index: 999;
     }
     .Menu_Content ul .active div{

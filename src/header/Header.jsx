@@ -10,7 +10,7 @@ const Header = () => {
         <motion.div
         id="firstSection"
         initial={{scale:1.2,opacity:0}}
-        whileInView={{scale:1,opacity:1}}
+        animate={{scale:1,opacity:1}}
         transition={{duration:3,type:"spring",stiffness:400}} 
         className="Menu">
             <div className="Main_Title_Menu">
@@ -30,16 +30,18 @@ const Header = () => {
                         return(
                             <Link
                             to={list.file}
-                            ><ul key={index} className="List" onClick={()=> setActive(index)}>
-                            
+                            duration={3}
+                            delay={0}
+                            ><ul key={index} className="List" onClick={()=> {return(
+                                setActive(index),
+                                setOpen(false)
+                                )}}>
                             <li 
-                            className={`${active===index ? 'active':''} `} >
-                                
-                                {list.name}
-                            <div ></div>
+                            className={`${active===index ? 'active':''} `} >{list.name}
+                            <div></div>
                             </li>
                         </ul>
-                                </Link>
+                            </Link>
                         )
                     })}
             </div>

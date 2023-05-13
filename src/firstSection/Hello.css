@@ -9,7 +9,7 @@
 }
 .Sides .images img:nth-child(1){
     position: absolute;
-    left:800px;
+    left:600px;
     top:116px;
     scale: 0.8;
 }
@@ -53,10 +53,17 @@
     font-size: 20px;
 }
 .Sides .logo img{
-    height: 625px;
-    width: 589px;
+    height: 525px;
+    max-width: 500px;
 }
 @media screen and (0<=width<=425px){
+    .Sides .text div:nth-child(1) h1{
+        font-size: 28px;
+    }
+    .Sides .text div:nth-child(2) h1{
+        font-size: 28px;
+        color: #FF4C60;
+    }
     .Sides{
         height:100vh;
         width:100%;

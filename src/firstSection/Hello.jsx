@@ -19,7 +19,7 @@ const Hello = () => {
                 })}
             </div>
             <motion.div 
-            initial={{x:"-200px",opacity:0}}
+            initial={{x:"-50px",opacity:0}}
             whileInView={{x:0,opacity:1}}
             transition={{duration:2,type:"spring",stiffness:120}}
             className="text">
