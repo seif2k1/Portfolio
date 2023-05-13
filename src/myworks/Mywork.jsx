@@ -6,7 +6,6 @@ import 'swiper/css'
 import "./mywork.css"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -14,7 +13,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectCoverflow } from "swiper"
+import { EffectCoverflow } from "swiper";
 import {motion} from "framer-motion"
 
 const Mywork = ()=>{
@@ -25,9 +24,6 @@ const Mywork = ()=>{
         whileInView={{opacity:1}}
         transition={{duration:3,type:"spring",stiffness:400}}
         className="portfolio">
-            <h1 className="working">My Recent Work
-            <div></div></h1>
-          
       <Swiper
       
       breakpoints={{
@@ -56,16 +52,24 @@ const Mywork = ()=>{
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={pic1} alt="images" />
+                    <a href="https://seif2k1.github.io/barbershop/">
+                    <img src={pic1} alt="seof"/>
+                    </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pic2} alt="images" />
+                    <a href="https://seif2k1.github.io/newlink/">
+                    <img src={pic2} alt="seof"/>
+                    </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pic3} alt="images" />
+                    <a href="https://seif2k1.github.io/Cards/">
+                    <img src={pic3} alt="seof"/>
+                    </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pic4} alt="images" />
+                    <a href="https://seif2k1.github.io/Cart/">
+                    <img src={pic4} alt="seof"/>
+                    </a>
         </SwiperSlide>
       </Swiper>
         </motion.div>

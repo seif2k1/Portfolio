@@ -13,17 +13,17 @@ export const ListSkill = [
   },
   {
     name: "Git/Git-Hub",
-    value: "80%",
+    value: "75%",
   },
 ];
 export const Framworks = [
-    {
-      name: "React.js",
-    },
-    {
-      name: "Bootstrap",
-    },
-]
+  {
+    name: "React.js",
+  },
+  {
+    name: "Bootstrap",
+  },
+];
 export const Bonus = [
   {
     name: "Redux-Toolkit",
