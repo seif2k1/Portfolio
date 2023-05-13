@@ -6,6 +6,7 @@
     height:192px;
     background:#F9F3F5;
     margin:45px 0;
+    position: relative;
 }
 .Social .social-logos {
     display: flex;
@@ -43,6 +44,22 @@
     align-items:center;
     justify-content:center;
     gap:12px;
+}
+.Socials:hover div{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    background: black;
+    animation: seif11 1s ;
+}
+@keyframes seif11{
+    from{
+        width: 0px;
+    }   
+    to{
+        width: 100px;
+    }
 }
 @media screen and (0<=width<=425px){
     .Social{

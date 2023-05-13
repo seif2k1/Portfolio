@@ -19,6 +19,34 @@
   display: block;
   width: 100%;
 }
+.portfolio h1{
+  font-size:38px;
+  color:#FF4C60;
+}
+.working{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  padding: 13px 0;
+  cursor: pointer;
+}
+.working:hover div{
+    position: absolute;
+    bottom: 0;
+    width: 290px;
+    height: 3px;
+    background: #FF4C60;
+    animation: seif1 1s ;
+}
+@keyframes seif1{
+    from{
+        width: 0px;
+    }   
+    to{
+        width: 290px;
+    }
+}
 @media screen and  (0 <= width <= 425px){
   .swiper {
     width: 100%;

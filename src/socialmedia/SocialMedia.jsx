@@ -26,6 +26,7 @@ const Social = ()=>{
                                 <a href={socl.link} className="nav-link">
                                 <img src={socl.img} alt={socl.name} />
                                 <h1> {socl.name} </h1>
+                                <div></div>
                                 </a>
                             </motion.div>
                         )

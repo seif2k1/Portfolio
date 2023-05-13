@@ -25,6 +25,8 @@ const Mywork = ()=>{
         whileInView={{opacity:1}}
         transition={{duration:3,type:"spring",stiffness:400}}
         className="portfolio">
+            <h1 className="working">My Recent Work
+            <div></div></h1>
           
       <Swiper
       
