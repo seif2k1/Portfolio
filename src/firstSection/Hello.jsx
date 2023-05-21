@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import img from "../images/main_logo.png";
 import { ListImages } from "./ListImages"
 import './Hello.css'
-import cv from "./Seif eddine akkouche (1).pdf" 
+import cv from "./Resume.docx" 
 import {motion} from "framer-motion"
 const Hello = () => {
     return(
