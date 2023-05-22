@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.164920eb.css",
-    "main.js": "/Portfolio/static/js/main.2a653fa3.js",
+    "main.js": "/Portfolio/static/js/main.5c5495bf.js",
     "static/media/barbarshop.png": "/Portfolio/static/media/barbarshop.f667ca0b75d014340584.png",
     "static/media/Screenshot 2023-05-11 032916.png": "/Portfolio/static/media/Screenshot 2023-05-11 032916.6d4c5d1fef1b69c6f11c.png",
     "static/media/ecomerce.png": "/Portfolio/static/media/ecomerce.ca6ded884365b2dea985.png",
@@ -9,15 +9,15 @@
     "static/media/main_logo.png": "/Portfolio/static/media/main_logo.0317f89025b7987b7385.png",
     "static/media/BACKGROUND.png": "/Portfolio/static/media/BACKGROUND.451498af60f47d604cc8.png",
     "static/media/Group.png": "/Portfolio/static/media/Group.fcabc8a4a7dbba0e5e61.png",
-    "static/media/Resume.docx": "/Portfolio/static/media/Resume.b7223da1fcddc2db1bdc.docx",
+    "static/media/Cv.pdf": "/Portfolio/static/media/Cv.ddd98687fb73e73c7f9b.pdf",
     "index.html": "/Portfolio/index.html",
     "static/media/github.svg": "/Portfolio/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
     "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
     "main.164920eb.css.map": "/Portfolio/static/css/main.164920eb.css.map",
-    "main.2a653fa3.js.map": "/Portfolio/static/js/main.2a653fa3.js.map"
+    "main.5c5495bf.js.map": "/Portfolio/static/js/main.5c5495bf.js.map"
   },
   "entrypoints": [
     "static/css/main.164920eb.css",
-    "static/js/main.2a653fa3.js"
+    "static/js/main.5c5495bf.js"
   ]
 }
