@@ -38,11 +38,11 @@
   scale: 1.3;
 }
 .Sides .text div:nth-child(1) h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 .Sides .text div:nth-child(2) h1 {
-  font-size: 48px;
-  color: #ff4c60;
+  font-size: 40px;
+  -webkit-text-stroke: 1.5px #ff4c60;
 }
 .Sides .text div:nth-child(3) {
   display: flex;
@@ -58,11 +58,12 @@
 }
 @media screen and (0<=width<=425px) {
   .Sides .text div:nth-child(1) h1 {
-    font-size: 28px;
+    font-size: 15px;
   }
   .Sides .text div:nth-child(2) h1 {
-    font-size: 28px;
+    font-size: 15px;
     color: #ff4c60;
+    width: 60%;
   }
   .Sides {
     height: 100vh;
@@ -119,6 +120,14 @@
     width: 60vw;
     height: 718px;
   }
+  .Sides .text div:nth-child(1) h1 {
+    font-size: 19px;
+  }
+  .Sides .text div:nth-child(2) h1 {
+    font-size: 19px;
+    color: #ff4c60;
+    width: 60%;
+  }
   .Sides {
     height: 100vh;
     width: 100%;
@@ -162,4 +171,29 @@
     top: -10px;
     scale: 1.1;
   }
+}
+/* === removing default button style ===*/
+.button-animation .button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button-animation .button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #ff4c60;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px black;
 }

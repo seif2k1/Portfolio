@@ -30,13 +30,19 @@ const Hello = () => {
         transition={{ duration: 2, type: "spring", stiffness: 120 }}
         className="text"
       >
+        {/* 
         <div>
           <h1>Hello,I'm Seif Eddine</h1>
+        </div> */}
+        <div className="button-animation">
+          <button data-text="Awesome" class="button">
+            <span class="actual-text">Hello , I'm Seif Eddine</span>
+          </button>
         </div>
         <div>
           <h1>
             <Typewriter
-              words={["Front End Developper"]}
+              words={["Front End Developer"]}
               loop={0}
               cursor
               cursorStyle="_"

@@ -8,9 +8,6 @@ import { BiLogoJavascript } from "react-icons/bi";
 const Skills = () => {
   return (
     <div className="skills " id="skills">
-      <motion.div className="group-logo">
-        <img src={img} alt="img" />
-      </motion.div>
       <motion.div
         className="skills-descreption"
         style={{
@@ -54,12 +51,23 @@ const Skills = () => {
                     width: "100%",
                   }}
                 >
-                  <img
-                    src={skill.img}
-                    alt={skill.name}
-                    height={50}
-                    width={50}
-                  />
+                  <div className="light-button">
+                    <button className="bt">
+                      <div className="light-holder">
+                        <div className="dot"></div>
+                        <div className="light"></div>
+                      </div>
+                      <div className="button-holder">
+                        <img
+                          src={skill.img}
+                          alt={skill.name}
+                          height={50}
+                          width={50}
+                        />
+                        <p>{skill.name}</p>
+                      </div>
+                    </button>
+                  </div>
                 </motion.div>
               </div>
             );

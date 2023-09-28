@@ -35,12 +35,12 @@ export const ListSkill = [
     img: reactjs,
   },
   {
-    name: "React",
+    name: "Next",
     img: nextjs,
   },
 
   {
-    name: "Git",
+    name: "Redux-Toolkit",
     img: reduxToolkit,
   },
   {

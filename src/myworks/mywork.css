@@ -100,9 +100,10 @@
     width: 100%;
   }
 }
-button {
+#myworks button {
   --color: #ff4c60;
   font-family: inherit;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,8 +121,7 @@ button {
   font-weight: 500;
   color: var(--color);
 }
-
-button:before {
+#myworks button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -131,22 +131,22 @@ button:before {
   border-radius: 50%;
 }
 
-button:hover {
+#myworks button:hover {
   color: white;
 }
 
-button:before {
+#myworks button:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-button:hover:before {
+#myworks button:hover:before {
   top: -30px;
   left: -30px;
 }
 
-button:active:before {
+#myworks button:active:before {
   background: #ff4c60;
   transition: background 0s;
 }
