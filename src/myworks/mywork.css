@@ -1,4 +1,3 @@
-
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -8,9 +7,9 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   width: 800px;
   height: 800px;
 }
@@ -19,50 +18,135 @@
   display: block;
   width: 100%;
 }
-.portfolio h1{
-  font-size:38px;
-  color:#FF4C60;
+.portfolio h1 {
+  font-size: 38px;
+  color: #ff4c60;
 }
-.working{
+.working {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position:relative;
+  position: relative;
   padding: 13px 0;
   cursor: pointer;
 }
-.working:hover div{
-    position: absolute;
-    bottom: 0;
+.working:hover div {
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  height: 3px;
+  background: #ff4c60;
+  animation: seif1 1s;
+}
+@keyframes seif1 {
+  from {
+    width: 0px;
+  }
+  to {
     width: 290px;
-    height: 3px;
-    background: #FF4C60;
-    animation: seif1 1s ;
+  }
 }
-@keyframes seif1{
-    from{
-        width: 0px;
-    }   
-    to{
-        width: 290px;
-    }
+.barberShop .barber-image img,
+.hotel .hotel-image img,
+.dashboard .dashboard-image img,
+.shop .shop-image img,
+.pizza .pizza-image img {
+  width: 100%;
+  height: 350px;
 }
-@media screen and  (0 <= width <= 425px){
-  .swiper {
+.barberShop .barber-des,
+.hotel .hotel-des,
+.dashboard .dashboard-des,
+.shop .shop-des,
+.pizza .pizza-des {
+  width: 50%;
+}
+.barberShop .barber-image img,
+.hotel .hotel-image img,
+.dashboard .dashboard-image img,
+.shop .shop-image img,
+.pizza .pizza-image img {
+  width: 100%;
+}
+.hotel,
+.shop {
+  flex-direction: row-reverse;
+}
+@media screen and (0 <= width <= 768px) {
+  .barberShop,
+  .hotel,
+  .dashboard,
+  .shop,
+  .pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 0;
+  }
+  .barberShop .barber-image img,
+  .hotel .hotel-image img,
+  .dashboard .dashboard-image img,
+  .shop .shop-image img,
+  .pizza .pizza-image img {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 150px;
   }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .swiper-slide img {
-    display: block;
+  .barberShop .barber-des,
+  .hotel .hotel-des,
+  .dashboard .dashboard-des,
+  .shop .shop-des,
+  .pizza .pizza-des {
     width: 100%;
   }
+}
+button {
+  --color: #ff4c60;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #ff4c60;
+  transition: background 0s;
 }

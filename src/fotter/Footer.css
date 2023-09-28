@@ -1,69 +1,68 @@
-.footer{
-    height:70vh;
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
+.footer {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.myinfo{
-    background:#F9F3F5;
-    height:100%;
-    text-align:center;
-    border-radius:35px;
-    margin:0 14px ;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
+.myinfo {
+  background: #f9f3f5;
+  height: 100%;
+  text-align: center;
+  border-radius: 35px;
+  margin: 0 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.social-info{
-    height:80%;
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
+.social-info {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.social-info div h1{
-    text-align:center;
-    font-size:16px;
+.social-info div h1 {
+  text-align: center;
+  font-size: 16px;
 }
-.social-info div img{
-    width:70px;
-    height:70px;
+.social-info div img {
+  width: 70px;
+  height: 70px;
 }
-.social-info div{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:12px 0;
+.social-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 0;
 }
-.contact input{
-    border:1px solid #F9F3F5;
-    box-shadow:0 0 5px #F9F3F5;
-    border-radius:19px;
+.contact input {
+  border: 1px solid #f9f3f5;
+  box-shadow: 0 0 5px #f9f3f5;
+  border-radius: 19px;
 }
-.contact{
-    padding:20px;
-    border:1px solid #F9F3F5;
-    box-shadow:0 0 5px #FF4C60;
-    border-radius:35px;
+.contact {
+  padding: 20px;
+  border: 1px solid #f9f3f5;
+  box-shadow: 0 0 5px #ff4c60;
+  border-radius: 35px;
 }
-@media screen and  (0<=width<= 768px){
-    .social-info div h1{
-        font-size:12px;
-    }
-    .footer{
-    margin:20px 0;
-    width:100%;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;
-}
-.contact{
-    margin:20px 0;
-    padding:20px;
-    border:1px solid #F9F3F5;
-    box-shadow:0 0 5px #FF4C60;
-    border-radius:35px;
-}
+@media screen and (0<=width<= 768px) {
+  .social-info div h1 {
+    font-size: 12px;
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #f9f3f5;
+    box-shadow: 0 0 5px #ff4c60;
+    border-radius: 35px;
+  }
 }
